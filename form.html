@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form | Haikal </title>
+</head>
+<body>
+    <main class="container">
+        <div class="sign-in">
+            <h1>Form Input Data Mahasiswa</h1>
+            <form action="./table.php" method="post">
+                <div class="input-form">
+                    <label for="nim">NIM :</label>
+                    <input type="number" id="nim" name="NIM">
+                </div>
+                <div class="input-form">
+                    <label for="name">Nama :</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="input-form">
+                    <p>Jenis Kelamin :</p>
+                    <div class="radiobutton">
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">female</label>
+                    </div>
+                </div>
+                <div class="input-form">
+                    <label for="date">Tanggal Lahir :</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="input-form">
+                    <label for="placeofBirth">Tempat Lahir</label>
+                    <input type="text" id="placeofBirth" name="placeofBirth">
+                </div>
+                <div class="input-form">
+                    <label for="jurusan">Jurusan :</label>
+                    <select name="jurusan" id="jurusan">
+                        <option value="Akutansi">Akutansi</option>
+                        <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                        <option value="Manajemen">Manajemen</option>
+                        <option value="Hukum">Hukum</option>
+                        <option value="PGSD">PGSD</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Mesin">Teknik Mesin</option>
+                        <option value="Teknik Sipil">Teknik Sipil</option>
+                    </select>
+                </div>
+                <div class="input-form">
+                    <label for="tahunMasuk">Tahun Masuk :</label>
+                    <select name="tahunMasuk" id="tahunMasuk">
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </main>
+    <div class="bg-image">
+        <img src="img/wallpaperflare.com_wallpaper.jpg" alt="" srcset="">
+    </div>
+</body>
+</html>
